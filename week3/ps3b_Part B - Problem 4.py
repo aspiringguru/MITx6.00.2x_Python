@@ -368,7 +368,7 @@ class ResistantVirus(SimpleVirus):
             raise NoChildException
 
 
-#test cases
+#test cases - keep these, write a test script.
 #virus = ResistantVirus(1.0, 0.0, {}, 0.0)
 #Testing update() and doesClear(); virus should not be cleared and should always reproduce.
 #virus = ResistantVirus(0.0, 0.0, {}, 0.0)
@@ -382,18 +382,10 @@ class ResistantVirus(SimpleVirus):
 #virus = ResistantVirus(1.0, 0.0, {"drug1":True, "drug2":False}, 0.0)
 #Test: child = virus.reproduce(0, ["drug2"])
 #Test: child = virus.reproduce(0, ["drug1"])
-
-#failed test below
 #virus = ResistantVirus(1.0, 0.0, {'drug1':True, 'drug2': True, 'drug3': True, 'drug4': True, 'drug5': True, 'drug6': True}, 0.5)
 #Reproducing 10 times by calling virus.reproduce(0, [])
-#NB: failed this above test
-
-#failed test below
 #virus = ResistantVirus(1.0, 0.0, {"drug2": True}, 1.0)
 #Making 100 successive generations and testing their resistance to drug2
-#NB: failed this above test
-
-
 #virus = ResistantVirus(1.0, 0.0, {"drug1": True}, 0.0)
 #Making 100 successive generations and testing their resistance to drug1.
 #virus = ResistantVirus(0.0, 0.0, {"drug1":True, "drug2":False}, 0.0)
